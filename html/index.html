@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+
+    <title>To-Do</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <video src="video-container" muted autoplay loop>
+        <source src="/assets/back-vid.mp4">
+    </video>
+
+    <header>
+        <nav>
+            <img src="/assets/logo.png" alt="">
+            <h1>ToDo</h1>
+        </nav>
+
+        <form id="new-task-form">
+            <input type="text" id="new-task-input" placeholder="Anything ToDo">
+            <input type="submit" id="new-task-submit" value="Add Task">
+        </form>
+    </header>
+
+    <main>
+
+        <div id="tasks">
+            <h1>Tasks</h1>
+        </div>
+
+        <section class="task-list">
+
+            <div class="tasks">
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="My task" readonly>
+                    </div>
+                    <div class="buttons">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    
+
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
