@@ -1,0 +1,191 @@
+:root {
+    --dark: #111827; 
+    --light: #ffff; 
+    --gray: #6b7280; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Caveat;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background: url(/assets/back-vid.mp4); */
+    background: linear-gradient(to right,rgb(60, 167, 255), rgb(53, 241, 156));
+    /* background-position: center; */
+    /* background-size: cover; */
+    color: white;
+}
+
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    opacity: 5%;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    z-index: 1;
+}
+
+nav img {
+    width: 40px;
+}
+
+nav h1 {
+    font-family: Shadows Into Light;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.30rem;
+    margin-right: 1rem;
+    color: var(--gray);
+}
+
+#new-task-input::placeholder {
+    color: var(--gray);
+}
+
+#new-task-submit {
+    color: rgb(60, 167, 255);
+    font-size: 1.3rem;
+    /* font-weight: 700; */
+    background-color: var(--dark);
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    /* background-image: linear-gradient(to right,rgb(60, 167, 255), rgb(53, 241, 156));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+#new-task-submit:hover{
+    color: rgb(53, 241, 156);
+    /* border: 1px solid rgb(53, 241, 156); */
+    
+}
+#new-task-submit:active{
+    color: crimson;
+    font-size: 1.2rem;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#tasks {
+    display: flex;
+    align-items: center;
+}
+
+#tasks h1 {
+    font-family: Shadows Into Light;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: underline;
+
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem; 
+}
+
+.content {
+    flex: 1 1 0%;
+}
+
+.text {
+    color: var(--light);
+    font-size: 1.30rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.text:not(:read-only) {
+    color: palegreen;
+}
+
+.buttons button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: 0.2s ease;
+}
+
+.edit {
+    color: rgb(60, 167, 255);
+}
+
+.edit:hover{
+    color: rgb(53, 241, 156);
+}
+.edit:active{
+    color: crimson;
+}
+
+.delete {
+    color: crimson;
+}
+
+
+
+
+
+
+
