@@ -98,7 +98,6 @@ nav h1 {
 }
 #new-task-submit:hover{
     color: rgb(53, 241, 156);
-    /* border: 1px solid rgb(53, 241, 156); */
     
 }
 #new-task-submit:active{
